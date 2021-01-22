@@ -8,7 +8,29 @@
 	<div class="wrapper">
 		@@include('_header.html',{})
 		<main class="page">
-
+			<div class="page__maincontent maincontent-page">
+				<div class="maincontent-page__content">
+					<div class="maincontent-page__container _container">
+						<div class="maincontent-page__body">
+							<div class="maincontent-page__info">
+								<div class="maincontent-page__suptitle">В Краснодаре и крае </div>
+								<a href="" class="maincontent-page__title">выкуп авто <br> в любом состоянии</a>
+								<div class="maincontent-page__subtitle">Получите до 90% рыночной цены за авто уже сегодня!</div>
+							</div>
+							<form action="" class="maincontent-page__form form-info">
+								<div class="form-info__title">Узнать сумму выкупа авто</div>
+								<label class="form-info__label" for="vehicle">Ваш автомобиль</label>
+								<input autocomplete="off" type="text" name="vehicle" class="form-info__input input" placeholder="Lada Granta,2016 г.в." />
+								<label class="form-info__label" for="phone">Номер телефона</label>
+								<input autocomplete="off" type="number" name="phone" class="form-info__input input" placeholder="+7 999 999 99 99" />
+								<button class="form-info__btn" type="submit">Отправить</button>
+								<div class="form-info__conditions">Отправляя форму, вы соглашаетесь с условиями обработки персональных данных </div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="maincontent-page__img ibg"><img src="img/bg-header.jpg" alt="" /></div>
+			</div>
 		</main>
 		@@include('_footer.html',{})
 	</div>
