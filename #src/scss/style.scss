@@ -111,6 +111,8 @@ body {
 
 	&__maincontent {
 	}
+	&__advantages {
+	}
 }
 .maincontent-page {
 	position: relative;
@@ -170,8 +172,11 @@ body {
 
 	&__subtitle {
 		font-size: 18px;
-		line-height: 24px;
+		line-height: 24 / 18 * 100%;
 		color: #ffffff;
+		@media (max-width: $md1+px) {
+			font-size: 17px;
+		}
 	}
 
 	&__form {
@@ -230,6 +235,9 @@ body {
 			line-height: 100%;
 			color: rgba(0, 0, 0, 0.5);
 		}
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 18px 0px;
+		}
 	}
 	&__btn {
 		height: 48px;
@@ -243,8 +251,16 @@ body {
 		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		color: #ffffff;
-		background: linear-gradient(91.17deg, #eb5d56 0.01%, #390a40 100.01%);
+		background: linear-gradient(91.17deg, #eb5d56, #390a40);
 		border-radius: 4px;
+		@media (max-width: $md1+px) {
+			margin: 10px 0px 25px 0px;
+		}
+		@media (min-width: $md2+px) {
+			&:hover {
+				background: linear-gradient(91.17deg, #9c3b36, #390a40);
+			}
+		}
 	}
 
 	&__conditions {
@@ -253,6 +269,88 @@ body {
 		line-height: 18 / 13 * 100%;
 		letter-spacing: 0.5px;
 		color: #ffffff;
+		@media (max-width: $md1+px) {
+			font-size: 10px;
+		}
+	}
+}
+.advantages-page {
+	padding: 110px 0px 0px 0px;
+	@media (max-width: $md1+px) {
+		padding: 90px 0px 0px 0px;
+	}
+	@media (max-width: $md2+px) {
+		padding: 70px 0px 0px 0px;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	&__block {
+		position: relative;
+		flex: 0 1 73.2%;
+		padding: 15.2% 0px;
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__main {
+		flex: 1 1 100%;
+		padding: 0px 0px 0px 115px;
+		@media (max-width: $md1+px) {
+			padding: 0px 0px 0px 90px;
+		}
+		@media (max-width: $md2+px) {
+			padding: 0px 0px 0px 70px;
+		}
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 46 / 32 * 100%;
+		text-transform: uppercase;
+		background: linear-gradient(91.17deg, #eb5d56, #390a40);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin: 0px 0px 70px 0px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -85px 0px 0px;
+	}
+
+	&__item {
+	}
+}
+.item-advantages {
+	flex: 0 1 50%;
+	margin: 0px 0px 47px 0px;
+	padding: 0px 85px 0px 0px;
+	&__img {
+		margin: 0px 0px 23px 0px;
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 34 / 24 * 100%;
+		color: #4f4f4f;
+		margin: 0px 0px 23px 0px;
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 24 / 16 * 100%;
+		color: #4f4f4f;
+		margin: 0px 0px 14px 0px;
 	}
 }
 
