@@ -99,7 +99,7 @@ body {
 }
 .page {
 	flex: 1 1 auto;
-	padding: 85px 0px 0px 0px;
+	padding: 84px 0px 0px 0px;
 	@media (max-width: $md1+px) {
 		padding: 75px 0px 0px 0px;
 	}
@@ -160,7 +160,7 @@ body {
 	&__title {
 		font-weight: bold;
 		font-size: 52px;
-		line-height: 62 / 52 * 100%;
+		line-height: 63 / 52 * 100%;
 		text-transform: uppercase;
 		color: #ffffff;
 		margin: 0px 0px 37px 0px;
@@ -284,12 +284,15 @@ body {
 	}
 	&__container {
 		display: flex;
-		align-items: center;
+		justify-content: space-between;
 	}
 	&__block {
 		position: relative;
-		flex: 0 1 73.2%;
-		padding: 15.2% 0px;
+		flex: 0 1 103%;
+		margin-left: calc(-100vw / 2 + 100% / 2);
+		@media (max-width: $md2+px) {
+			display: none;
+		}
 	}
 	&__img {
 		position: absolute;
@@ -301,7 +304,7 @@ body {
 
 	&__main {
 		flex: 1 1 100%;
-		padding: 0px 0px 0px 115px;
+		padding: 46px 0px 0px 140px;
 		@media (max-width: $md1+px) {
 			padding: 0px 0px 0px 90px;
 		}
@@ -318,13 +321,13 @@ body {
 		background: linear-gradient(91.17deg, #eb5d56, #390a40);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		margin: 0px 0px 70px 0px;
+		margin: 0px 0px 68px 0px;
 	}
 
 	&__content {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0px -85px 0px 0px;
+		margin: 0px -55px 0px 0px;
 	}
 
 	&__item {
@@ -332,25 +335,24 @@ body {
 }
 .item-advantages {
 	flex: 0 1 50%;
-	margin: 0px 0px 47px 0px;
-	padding: 0px 85px 0px 0px;
+	margin: 0px 0px 45px 0px;
+	padding: 0px 55px 0px 0px;
 	&__img {
-		margin: 0px 0px 23px 0px;
+		margin: 0px 0px 22px 0px;
 	}
 
 	&__title {
 		font-size: 24px;
-		line-height: 34 / 24 * 100%;
+		line-height: 35 / 24 * 100%;
 		color: #4f4f4f;
-		margin: 0px 0px 23px 0px;
+		margin: 0px 0px 17px 0px;
 	}
 
 	&__text {
 		font-weight: 300;
-		font-size: 16px;
-		line-height: 24 / 16 * 100%;
+		font-size: 18px;
+		line-height: 23 / 18 * 100%;
 		color: #4f4f4f;
-		margin: 0px 0px 14px 0px;
 	}
 }
 

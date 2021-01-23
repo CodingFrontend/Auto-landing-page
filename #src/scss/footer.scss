@@ -1,31 +1,33 @@
 .footer {
-	margin: 50px 0px 0px 0px;
+	padding: 44px 0px 20px 0px;
 	&__container {
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
-		height: 125px;
-		@media (max-width: $md1+px) {
-			height: 100px;
-		}
 	}
 
 	&__column {
+		padding: 16px 0px 0px 0px;
 		&:nth-child(2) {
-			flex: 0 0 178px;
-			width: 178px;
+			flex: 0 0 105px;
+			width: 105px;
+			padding: 4px 0px 0px 0px;
+			margin: 0px 0px 0px 30px;
 			img {
 				width: 100%;
 				max-width: 100%;
+				margin: 0px 0px 10px 0px;
 			}
 			@media (max-width: $md1+px) {
-				flex: 0 0 160px;
-				width: 160px;
+				flex: 0 0 90px;
+				width: 90px;
 			}
 			@media (max-width: $md2+px) {
-				flex: 0 0 140px;
-				width: 140px;
+				flex: 0 0 70px;
+				width: 70px;
 			}
+		}
+		&:nth-child(3) {
+			margin: 0px 43px 0px 0px;
 		}
 		p {
 			margin: 0px 0px 16px 0px;
@@ -40,7 +42,11 @@
 
 	&__policy {
 		cursor: pointer;
-		@extend .footer__copy;
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 14 / 12 * 100%;
+		color: #828282;
+		margin: 0px 0px 16px 0px;
 		text-decoration: underline;
 		@media (min-width: $md2+px) {
 			&:hover {
@@ -51,7 +57,7 @@
 
 	&__copy {
 		font-weight: 300;
-		font-size: 12px;
+		font-size: 13px;
 		line-height: 14 / 12 * 100%;
 		color: #828282;
 		margin: 0px 0px 20px 0px;
