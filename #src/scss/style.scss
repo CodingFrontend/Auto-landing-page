@@ -106,6 +106,9 @@ body {
 	@media (max-width: $md2+px) {
 		padding: 60px 0px 0px 0px;
 	}
+	@media (max-width: $md4+px) {
+		padding: 50px 0px 0px 0px;
+	}
 	&__container {
 	}
 
@@ -116,6 +119,17 @@ body {
 }
 .maincontent-page {
 	position: relative;
+	background-color: #390a40;
+	margin: 0px 0px 100px 0px;
+	@media (max-width: $md1+px) {
+		margin: 0px 0px 80px 0px;
+	}
+	@media (max-width: $md2+px) {
+		margin: 0px 0px 60px 0px;
+	}
+	@media (max-width: $md4+px) {
+		margin: 0px 0px 50px 0px;
+	}
 	&__container {
 	}
 	&__body {
@@ -124,6 +138,9 @@ body {
 		padding: 0px 110px;
 		@media (max-width: $md1+px) {
 			padding: 0px 0px;
+		}
+		@media (max-width: $md3+px) {
+			flex-direction: column;
 		}
 	}
 	&__content {
@@ -134,12 +151,25 @@ body {
 		@media (max-width: $md1+px) {
 			padding: 80px 0px 45px 0px;
 		}
+		@media (max-width: $md2+px) {
+			padding: 70px 0px 30px 0px;
+		}
+		@media (max-width: $md3+px) {
+			padding: 50px 0px 20px 0px;
+		}
+		@media (max-width: $md4 + px) {
+			padding: 40px 0px 15px 0px;
+		}
 	}
 
 	&__info {
-		padding: 45px 0px 0px 0px;
+		padding: 45px 20px 0px 0px;
 		@media (max-width: $md1+px) {
-			padding: 35px 0px 0px 0px;
+			padding: 35px 20px 0px 0px;
+		}
+		@media (max-width: $md3+px) {
+			padding: 0px 0px 0px 0px;
+			margin: 0px 0px 40px 0px;
 		}
 	}
 
@@ -155,6 +185,18 @@ body {
 			font-size: 16px;
 			margin: 0px 0px 25px 0px;
 		}
+		@media (max-width: $md2+px) {
+			font-size: 15px;
+			margin: 0px 0px 23px 0px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 13px;
+			margin: 0px 0px 18px 0px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 11px;
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__title {
@@ -168,6 +210,14 @@ body {
 			font-size: 45px;
 			margin: 0px 0px 30px 0px;
 		}
+		@media (max-width: $md2+px) {
+			font-size: 40px;
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $md4+ px) {
+			font-size: 30px;
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__subtitle {
@@ -177,12 +227,18 @@ body {
 		@media (max-width: $md1+px) {
 			font-size: 17px;
 		}
+		@media (max-width: $md2+px) {
+			font-size: 15px;
+		}
 	}
 
 	&__form {
 		flex: 0 0 400px;
 		@media (max-width: $md1+px) {
 			flex: 0 0 350px;
+		}
+		@media (max-width: $md2+px) {
+			flex: 0 0 310px;
 		}
 	}
 
@@ -203,6 +259,9 @@ body {
 	@media (max-width: $md1+px) {
 		padding: 27px 23px;
 	}
+	@media (max-width: $md2+px) {
+		padding: 25px 21px;
+	}
 	&__title {
 		font-size: 26px;
 		line-height: 100%;
@@ -212,6 +271,10 @@ body {
 			font-size: 22px;
 			margin: 0px 0px 36px 0px;
 		}
+		@media (max-width: $md2+px) {
+			font-size: 20px;
+			margin: 0px 0px 33px 0px;
+		}
 	}
 	&__label {
 		font-weight: bold;
@@ -220,6 +283,9 @@ body {
 		letter-spacing: 0.02em;
 		color: #ffffff;
 		margin: 0px 0px 12px 0px;
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 10px 0px;
+		}
 	}
 
 	&__input {
@@ -237,6 +303,14 @@ body {
 		}
 		@media (max-width: $md1+px) {
 			margin: 0px 0px 18px 0px;
+			height: 45px;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 15px 0px;
+			height: 40px;
+			&::placeholder {
+				font-size: 14px;
+			}
 		}
 	}
 	&__btn {
@@ -255,6 +329,13 @@ body {
 		border-radius: 4px;
 		@media (max-width: $md1+px) {
 			margin: 10px 0px 25px 0px;
+			height: 45px;
+			font-size: 15px;
+		}
+		@media (max-width: $md2+px) {
+			margin: 10px 0px 20px 0px;
+			height: 40px;
+			font-size: 14px;
 		}
 		@media (min-width: $md2+px) {
 			&:hover {
@@ -275,12 +356,12 @@ body {
 	}
 }
 .advantages-page {
-	padding: 110px 0px 0px 0px;
+	margin: 0px 0px 100px 0px;
 	@media (max-width: $md1+px) {
-		padding: 90px 0px 0px 0px;
+		margin: 0px 0px 80px 0px;
 	}
 	@media (max-width: $md2+px) {
-		padding: 70px 0px 0px 0px;
+		margin: 0px 0px 60px 0px;
 	}
 	&__container {
 		display: flex;
@@ -290,6 +371,13 @@ body {
 		position: relative;
 		flex: 0 1 103%;
 		margin-left: calc(-100vw / 2 + 100% / 2);
+		background-color: #390a40;
+		@media (max-width: 1700px) {
+			flex: 0 1 90%;
+		}
+		@media (max-width: $md1+px) {
+			flex: 0 1 85%;
+		}
 		@media (max-width: $md2+px) {
 			display: none;
 		}
@@ -305,11 +393,14 @@ body {
 	&__main {
 		flex: 1 1 100%;
 		padding: 46px 0px 0px 140px;
+		@media (max-width: 1700px) {
+			padding: 42px 0px 0px 120 / 1700 * 100vw;
+		}
 		@media (max-width: $md1+px) {
-			padding: 0px 0px 0px 90px;
+			padding: 40px 0px 0px 90 / 1700 * 100vw;
 		}
 		@media (max-width: $md2+px) {
-			padding: 0px 0px 0px 70px;
+			padding: 0px 0px 0px 0px;
 		}
 	}
 
@@ -322,12 +413,28 @@ body {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		margin: 0px 0px 68px 0px;
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 55px 0px;
+			font-size: 30px;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 45px 0px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 26px;
+		}
 	}
 
 	&__content {
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0px -55px 0px 0px;
+		@media (max-width: $md1+px) {
+			margin: 0px -45 / $md1 * 100vw 0px 0px;
+		}
+		@media (max-width: $md4+px) {
+			margin: 0px 0px 0px 0px;
+		}
 	}
 
 	&__item {
@@ -337,8 +444,27 @@ body {
 	flex: 0 1 50%;
 	margin: 0px 0px 45px 0px;
 	padding: 0px 55px 0px 0px;
+	@media (max-width: $md1+px) {
+		margin: 0px 0px 35px 0px;
+		padding: 0px 45 / $md1 * 100vw 0px 0px;
+	}
+	@media (max-width: $md4+px) {
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	@media (max-width: $md4+px) {
+		flex: 1 1 100%;
+		padding: 0px 0px 0px 0px;
+	}
 	&__img {
 		margin: 0px 0px 22px 0px;
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $md2+px) {
+			margin: 0px 0px 15px 0px;
+		}
 	}
 
 	&__title {
@@ -346,6 +472,17 @@ body {
 		line-height: 35 / 24 * 100%;
 		color: #4f4f4f;
 		margin: 0px 0px 17px 0px;
+		@media (max-width: $md1+px) {
+			margin: 0px 0px 14px 0px;
+		}
+		@media (max-width: $md2+px) {
+			font-size: 22px;
+			margin: 0px 0px 10px 0px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 18px;
+			margin: 0px 0px 8px 0px;
+		}
 	}
 
 	&__text {
@@ -353,6 +490,12 @@ body {
 		font-size: 18px;
 		line-height: 23 / 18 * 100%;
 		color: #4f4f4f;
+		@media (max-width: $md1+px) {
+			font-size: 15px;
+		}
+		@media (max-width: $md3+px) {
+			font-size: 14px;
+		}
 	}
 }
 
