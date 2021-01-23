@@ -97,6 +97,35 @@ body {
 .ibg img {
 	display: none;
 }
+.input {
+	width: 100%;
+	background: #ffffff;
+	border: 1px solid #fcfae1;
+	border-radius: 4px;
+	height: 48px;
+	padding: 0px 12px;
+	&::placeholder {
+		font-size: 16px;
+		line-height: 100%;
+		color: rgba(0, 0, 0, 0.5);
+	}
+	&._error {
+		border: 1px solid #f92e2e;
+	}
+	@media (max-width: $md1+px) {
+		height: 45px;
+	}
+	@media (max-width: $md2+px) {
+		height: 40px;
+		&::placeholder {
+			font-size: 14px;
+		}
+	}
+}
+.form__error {
+	color: #f92e2e;
+	padding: 3px 0px 0px 0px;
+}
 .page {
 	flex: 1 1 auto;
 	padding: 84px 0px 0px 0px;
@@ -291,26 +320,11 @@ body {
 	&__input {
 		display: block;
 		margin: 0px 0px 20px 0px;
-		background: #ffffff;
-		border: 1px solid #fcfae1;
-		border-radius: 4px;
-		height: 48px;
-		padding: 0px 12px;
-		&::placeholder {
-			font-size: 16px;
-			line-height: 100%;
-			color: rgba(0, 0, 0, 0.5);
-		}
 		@media (max-width: $md1+px) {
 			margin: 0px 0px 18px 0px;
-			height: 45px;
 		}
 		@media (max-width: $md2+px) {
 			margin: 0px 0px 15px 0px;
-			height: 40px;
-			&::placeholder {
-				font-size: 14px;
-			}
 		}
 	}
 	&__btn {

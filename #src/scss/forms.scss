@@ -159,9 +159,6 @@ textarea {
 .input {
 	&._focus {
 	}
-	&._error {
-		border: 1px solid red;
-	}
 }
 textarea.input {
 	resize: none;

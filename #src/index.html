@@ -20,9 +20,13 @@
 							<form action="" class="maincontent-page__form form-info">
 								<div class="form-info__title">Узнать сумму выкупа авто</div>
 								<label class="form-info__label" for="vehicle">Ваш автомобиль</label>
-								<input autocomplete="off" type="text" name="vehicle" class="form-info__input input" placeholder="Lada Granta,2016 г.в." />
+								<div class="form-info__input">
+									<input autocomplete="off" type="text" name="vehicle" data-error="Заполните поле" class="input _req" placeholder="Lada Granta,2016 г.в." />
+								</div>
 								<label class="form-info__label" for="phone">Номер телефона</label>
-								<input autocomplete="off" type="tel" name="phone" class="form-info__input input" placeholder="+7 999 999 99 99" />
+								<div class="form-info__input">
+									<input autocomplete="off" type="tel" name="phone" data-error="Заполните поле" class="input _req" placeholder="+7 999 999 99 99" minlength="12" maxlength="12" />
+								</div>
 								<button class="form-info__btn btn" type="submit">Отправить</button>
 								<div class="form-info__conditions">Отправляя форму, вы соглашаетесь с условиями обработки персональных данных </div>
 							</form>

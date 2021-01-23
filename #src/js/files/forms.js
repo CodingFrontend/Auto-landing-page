@@ -33,8 +33,8 @@ function form_validate(form) {
 		for (let index = 0; index < form_req.length; index++) {
 			const el = form_req[index];
 
-				error += form_validate_input(el);
-			
+			error += form_validate_input(el);
+
 		}
 	}
 	return error;
